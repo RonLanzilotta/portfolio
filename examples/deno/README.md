@@ -1,6 +1,6 @@
 # Astro Starter Kit: Deno
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/deno)
+[![Open in StackBlitz](https://developer.stackblitz.com//assets/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/deno)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/deno)
 
 ```

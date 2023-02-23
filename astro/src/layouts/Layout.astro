@@ -1,0 +1,58 @@
+---
+export interface Props {
+	title: string;
+}
+
+import "../styles/main.css"
+import "../styles/bootstrap-custom.css"
+import "../styles/custom.css"
+import "../styles/ionicons.min.css"
+import "../styles/lity.min.css"
+import "../styles/simplebar.min.css"
+import "../styles/tiny-slider.css"
+import Header from "../components/header.astro";
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="css/ionicons.min.css">
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header></Header>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #F6F6F6;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>
+
+<script is:inline src="/js/jquery.min.js"></script>
+<script is:inline src="/js/bootstrap.bundle.min.js"></script>
+<script is:inline src="/js/imagesloaded.pkgd.min.js"></script>
+<script is:inline src="/js/isotope.pkgd.min.js"></script>
+<script is:inline src="/js/animatedModal.js"></script>
+<script is:inline src="/js/tiny-slider.js"></script>
+<script is:inline src="/js/simplebar.min.js"></script>
+<script is:inline src="/js/main.js"></script>
+<!-- Custom JS (Add your custom JS scripts to this file)-->
+<script is:inline src="/js/custom.js"></script>

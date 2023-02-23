@@ -8,7 +8,7 @@ https://docs.astro.build/en/core-concepts/astro-pages/#non-html-pages
 npm create astro@latest -- --template non-html-pages
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/non-html-pages)
+[![Open in StackBlitz](https://developer.stackblitz.com//assets/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/non-html-pages)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/non-html-pages)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
