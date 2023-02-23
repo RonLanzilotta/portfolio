@@ -8507,6 +8507,7 @@ button.bg-dark:focus {
 
 .fixed-top {
   left: 0;
+  background: #101010;
   position: fixed;
   right: 0;
   top: 0;
