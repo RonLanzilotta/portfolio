@@ -1744,8 +1744,8 @@ hr {
 .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
   color: #fff;
   font-size: 15px;
-  font-weight: 400;
-  line-height: 1.8;
+  font-weight: 600;
+  line-height: 1;
   margin-bottom: 10px;
 }
 
@@ -1770,13 +1770,25 @@ hr {
 
 @media (max-width: 767.98px) {
   .portfolio-section .filter-control>li {
-    font-size: 14px;
+    font-weight: 400;
+    overflow-wrap: normal;
   }
 }
 
 @media (max-width: 575.98px) {
-  .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
-    font-size: 14px;
+  .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-more {
+    font-size: 12px;
+    font-weight: 400;
+    overflow-wrap: normal;
+  }
+}
+
+@media (max-width: 420px) {
+  .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-more {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    overflow-wrap: normal;
   }
 }
 
