@@ -33,8 +33,7 @@
 body {
   background-color: #111;
   color: #9f9f9f;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  font-size: 14px;
   font-weight: 400;
   line-height: 1.95;
   position: relative;
@@ -90,10 +89,10 @@ hr {
 
 /* Buttons */
 .button-main {
-  background-color: #fff;
+  background-color: #009e66;
   border: 1px solid #fff;
   border-radius: 30px;
-  color: #222;
+  color: #009e66;
   font-size: 14px;
   padding: 10px 35px;
 }
@@ -583,7 +582,7 @@ hr {
   .lightbox-content
   .section-heading.page-heading
   > .animated-bar {
-  background-color: #fff;
+  background-color: #009e66;
   content: "";
   display: block;
   height: 4px;
@@ -1043,6 +1042,12 @@ hr {
 }
 
 .info-section .info-content .content-description p:last-child {
+  background-color: #111;
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.95;
   border-bottom: 2px solid rgba(255, 255, 255, 0.08);
   margin-bottom: 0;
   padding-bottom: 29px;
@@ -1388,12 +1393,13 @@ hr {
 
 .resume-section .col-title {
   font-size: 26px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .resume-section .resume-item {
   background-color: #161616;
-  border-left: 2px solid transparent;
+  border-left: 2px solid #009e66;
   padding: 32px 48px;
   position: relative;
 }
@@ -1404,6 +1410,10 @@ hr {
 
 .resume-section .resume-item:last-child {
   margin-bottom: 0;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
 }
 
 .resume-section .resume-item .item-arrow {
@@ -1420,15 +1430,21 @@ hr {
 }
 
 .resume-section .resume-item .item-arrow:before {
+  background-color: #009e66;
   height: 16px;
   left: 0;
   width: 16px;
 }
 
 .resume-section .resume-item .item-arrow:after {
-  border: 8px solid transparent;
+  border-left-color: #009e66;
+}
+
+.resume-section .resume-item .item-arrow:after {
+  border: 8px solid #009e66;
   left: 16px;
 }
+
 
 .resume-section .resume-item .item-title {
   line-height: 100%;
@@ -1501,11 +1517,20 @@ hr {
   border-top-left-radius: 1px;
 }
 
-.skill-list {
-  display: grid;
-  /* grid-template-rows: 2fr 2fr; */
+.skill-lists {
+  padding: 30px;
+  --n: 4; /* number of rows*/
+  --m: 4; /* number of columns */
+  --g: 20px; /* control the gap */
+  --f: 1.5; /* control the scale factor */
 
+  display: grid;
+  gap: var(--g);
+  width: calc(var(--m) * var(--s) + (var(--m) - 1) * var(--g));
+  height: calc(var(--n) * var(--s) + (var(--n) - 1) * var(--g));
+  grid-template-columns: repeat(var(--m), auto);
 }
+
 .skill-set {
   /* flex-direction: column; */
   /* justify-content: space-between;
@@ -1515,8 +1540,22 @@ hr {
 
 }
 
-
 @media (max-width: 767.98px) {
+
+  .skill-lists {
+    padding: 30px;
+    --n: 2; /* number of rows*/
+    --m: 2; /* number of columns */
+    --g: 20px; /* control the gap */
+    --f: 1.5; /* control the scale factor */
+  
+    display: grid;
+    gap: var(--g);
+    width: calc(var(--m) * var(--s) + (var(--m) - 1) * var(--g));
+    height: calc(var(--n) * var(--s) + (var(--n) - 1) * var(--g));
+    grid-template-columns: repeat(var(--m), auto);
+  }
+
   .skills-section .single-skill:not(:last-child) {
     margin-bottom: 40px !important;
   }
@@ -1525,6 +1564,24 @@ hr {
     margin-bottom: 40px !important;
   }
 }
+
+@media (max-width: 420px) {
+  .skill-lists {
+    padding: 30px;
+    --n: 4; /* number of rows*/
+    --m: 1; /* number of columns */
+    --g: 20px; /* control the gap */
+    --f: 1.5; /* control the scale factor */
+  
+    display: grid;
+    gap: var(--g);
+    width: calc(var(--m) * var(--s) + (var(--m) - 1) * var(--g));
+    height: calc(var(--n) * var(--s) + (var(--n) - 1) * var(--g));
+    grid-template-columns: repeat(var(--m), auto);
+  }
+
+}
+
 
 /* Resume: Video */
 .video-section .content-part .video-title {
