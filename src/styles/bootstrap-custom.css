@@ -2696,9 +2696,9 @@ textarea.form-control.is-invalid {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
-  background-color: transparent;
+  background-color: #009e66;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 90px;
   color: #212529;
   display: inline-block;
   font-size: 1rem;
@@ -2709,6 +2709,10 @@ textarea.form-control.is-invalid {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   user-select: none;
   vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: #00fba3;
 }
 
 @media (prefers-reduced-motion: reduce) {
