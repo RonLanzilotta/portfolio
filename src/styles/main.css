@@ -1052,6 +1052,7 @@ hr {
   border-bottom: 2px solid rgba(255, 255, 255, 0.08);
   margin-bottom: 0;
   padding-bottom: 29px;
+  text-align: justify;
 }
 
 .info-section .info-content .content-info {
