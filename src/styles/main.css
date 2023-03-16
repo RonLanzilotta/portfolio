@@ -40,6 +40,10 @@ body {
   position: relative;
 }
 
+body[data-menu-overlay-theme-switcher="true"]:not(.header--menu-open) .black .header-title-text a {
+  color: white !important;
+}
+
 /* Typography */
 i.icon {
   line-height: 100%;
